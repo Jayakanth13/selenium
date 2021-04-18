@@ -1,4 +1,4 @@
-# selenium
+# Xendit-QA selenium assignment
 
 
 To view the test cases, look under resources/testcases folder
