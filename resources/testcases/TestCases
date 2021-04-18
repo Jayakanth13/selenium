@@ -1,0 +1,93 @@
+Test Cases
+
+Scenario 1 : Test if addition functionality works (Positive Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/,
+When the user clicks on '4', '+' , '1' and '=' in sequential order
+Then '5' appears as the output in the calculator 
+
+Scenario 2 : Test if subtraction functionality works (Positive Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/,
+When the user clicks on '4', '-' , '1' and '=' in sequential order
+Then '3' appears as the output in the calculator 
+
+Scenario 3 : Test if subtraction functionality works for numbers with 1 decimal place (Positive Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/,
+When the user clicks on '4','.','1', '-' , '1' and '=' in sequential order
+Then '3.1' appears as the output in the calculator 
+
+Scenario 4 : Test if subtraction functionality works for numbers with 2 decimal place (Positive Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/,
+When the user clicks on '4','.','1', '-'  ,'1' and '=' in sequential order
+Then '3.1' appears as the output in the calculator 
+
+Scenario 5 : Test if addition functionality works for the boundary number 0 (Boundary test case Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/,
+When the user clicks on '0','.','0', '+', '0' and '=' in sequential order
+Then '0' appears as the output in the calculator 
+
+Scenario 6 : Test if subtraction functionality works for the boundary number 0 (Boundary test case Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/,
+When the user clicks on '0','.','0', '-' and '0' in sequential order
+Then '0' appears as the output in the calculator 
+
+Scenario 7 : Test if addition functionality works for maximum number of digits with decimal places (Boundary test case Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/,
+When the user clicks on '9','.','9','9','9','9','9','9','9','9' '+'  '0','.','9','9','9','9','9','9','9','9' and '=' in sequential order
+Then '10.99999998' appears as the output in the calculator 
+
+Scenario 8 : Test if deletion functionality works for maximum number of digits with decimal places (Boundary test case Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/,
+When the user clicks on '9','.','9','9','9','9','9','9','9','9' '-'  '0','.','9','9','9','9','9','9','9','9' and '=' in sequential order
+Then '9' appears as the output in the calculator 
+
+Scenario 9 : Test if calculator shows 0 as an output for invlaid input starting with operators (Negative Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/, 
+When the user clicks on sqaure root symbol ,division symbol and '9' in sequential order
+Then '0' appears as the output in the calculator 
+
+Scenario 10 :Test subtract operation starting with the first input as subtract operator  (Positive Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/, 
+When the user clicks on '-','3','-' ,'3',
+Then '-6' appears as the output in the calculator 
+
+Scenario 11 :Test starting input with 2 points followed by a number  (Negative Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/, 
+When the user clicks on '.','.', and '3',
+Then '0.3' appears as the output in the calculator 
+
+Scenario 12 :Test starting input with 2 points followed by clicking equals (Negative Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/, 
+When the user clicks on '.','.', and '=',
+Then '0' appears as the output in the calculator 
+
+Scenario 13 :Test division functionality(Positive Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/, 
+When the user clicks on '9', divisin symbol ,  '3' and '=',
+Then '3' appears as the output in the calculator 
+
+
+Scenario 14 :Test multiplication functionality(Positive Scenario)
+
+Given that user has entered the url : https://www.online-calculator.com/full-screen-calculator/, 
+When the user clicks on '9', multplication symbol ,  '3' and '=',
+Then '27' appears as the output in the calculator 
+
+
+
+
+
+
+
